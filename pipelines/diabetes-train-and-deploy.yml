@@ -11,8 +11,9 @@ variables:
 trigger:
 - master
 
+
 pool:
-  vmImage: 'Ubuntu-20'
+  vmImage: $(vmImageName)
 
 steps:
 - task: AzureCLI@2
